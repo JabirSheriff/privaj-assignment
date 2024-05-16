@@ -22,7 +22,7 @@
             display: flex;
         }
         nav ul li {
-            margin-right: 40px; /* Increased margin between links */
+            margin-right: 40px; 
             position: relative;
         }
         nav ul li:last-child {
@@ -36,21 +36,21 @@
             position: relative;
         }
         nav ul li a:hover {
-            color: #4CAF50; /* Apple green */
+            color: #4CAF50; 
         }
         nav ul li a::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -2px; /* Adjust the distance of the line from the text */
+    bottom: -2px; 
     width: 100%;
     height: 2px;
-    background-color: transparent; /* Initial color of the line */
+    background-color: transparent; 
     transition: background-color 0.3s;
 }
 
 nav ul li a:hover::after {
-    background-color: #4CAF50; /* Apple green */
+    background-color: #4CAF50; 
 }
         section {
             padding: 0px;
@@ -60,30 +60,30 @@ nav ul li a:hover::after {
 
         .slider-container {
     width: 100%;
-    height: 800px; /* Adjust height as needed */
+    height: 800px; 
     overflow: hidden;
     position: relative;
 }
 
 .slider {
-    width: 200%; /* Double the width to accommodate two slides */
+    width: 200%; 
     height: 100%;
     display: flex;
     transition: transform 1s ease;
 }
 
 .slide {
-    width: 50%; /* Each slide takes half of the slider's width */
+    width: 50%; 
     height: 100%;
-    position: relative; /* Necessary for correct positioning */
+    position: relative; 
     
 }
 
 .slide img {
-            width: 100%; /* Adjust width to show more content */
+            width: 100%; 
             height: 100%;
             object-fit: cover;
-            /* object-position: center; Adjust position to center the content */
+            
         }
 
 .slide-text {
@@ -120,10 +120,10 @@ nav ul li a:hover::after {
         }
         .hero-text p:last-child {
             margin-top: 10px;
-            font-weight: bold; /* Make the last paragraph bold */
+            font-weight: bold;
         }
         .button {
-            background-color: #5ee263; /* Apple green */
+            background-color: #5ee263; 
             color: white;
             padding: 20px 115px;
             border: none;
@@ -134,7 +134,7 @@ nav ul li a:hover::after {
             transition: background-color 0.3s;
         }
         .button:hover {
-            background-color: #45a049; /* Darker shade of green on hover */
+            background-color: #45a049; 
         }
 
 
@@ -218,11 +218,14 @@ nav ul li a:hover::after {
     background-color: #fcf8e3;
 }
 /* end divider */
+
+
+
 .about-section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 50px; /* Adjust margin for all sides */
+    margin: 50px; 
     margin-top: 100px;
     margin-bottom: 100px;
 }
@@ -261,8 +264,8 @@ nav ul li a:hover::after {
 .progress {
     height: 20px;
     background-color: #f0f0f0;
-    border-radius: 10px; /* Add border-radius for rounded edges */
-    overflow: hidden; /* Hide overflow to keep the inner bars within the container */
+    border-radius: 10px; 
+    overflow: hidden; 
 }
 
 .progress-bar {
@@ -273,52 +276,35 @@ nav ul li a:hover::after {
     text-align: right;
     padding-right: 5px;
     line-height: 20px;
-    border-radius: 10px; /* Add border-radius for rounded edges */
+    border-radius: 10px; 
 }
 
 .progress-bar-inner {
     height: 100%;
     background-color: #93ca3a;
-    border-radius: 10px; /* Add border-radius for rounded edges */
+    border-radius: 10px; 
     transition: width 0.5s ease;
 }
 
-/* .progress-bar-web-design .progress-bar-inner {
-    width: 100%; 
-}
-
-.progress-bar-multimedia .progress-bar-inner {
-    width: 80%;
-}
-
-.progress-bar-search-engine .progress-bar-inner {
-    width: 90%;
-}
-
-.progress-bar-custom-branding .progress-bar-inner {
-    width: 70%;
-} */
-
-/* Adjust width for each progress bar */
 .progress-bar-web-design .progress-bar-inner {
-    width: 0%; /* Initially set width to 0 */
+    width: 0%; 
 }
 
 .progress-bar-multimedia .progress-bar-inner {
-    width: 0%; /* Initially set width to 0 */
+    width: 0%; 
 }
 
 .progress-bar-search-engine .progress-bar-inner {
-    width: 0%; /* Initially set width to 0 */
+    width: 0%; 
 }
 
 .progress-bar-custom-branding .progress-bar-inner {
-    width: 0%; /* Initially set width to 0 */
+    width: 0%; 
 }
 
-/* Add a class to apply animation when about section is clicked */
+
 .about-section.active .progress-bar-inner {
-    width: 100%; /* Set width to 100% when active */
+    width: 100%; 
 }
 
 
@@ -338,19 +324,19 @@ nav ul li a:hover::after {
 }
 
 .team-member {
-    text-align: center; /* Center the content */
-    margin-bottom: 60px; /* Add space between each team member */
+    text-align: center; 
+    margin-bottom: 60px; 
 }
 
 .team-member .team-image {
-    width: 300px; /* Adjust the width of the images */
-    margin: 0 auto 20px; /* Center the images horizontally and add spacing below */
+    width: 300px; 
+    margin: 0 auto 20px; 
     display: block;
     transition: transform 0.3s ease-in-out;
 }
 
 .team-member .team-image:hover {
-    transform: scale(1.1); /* Increase the size by 10% */
+    transform: scale(1.1); 
 }
 
 .team-member h3 {
@@ -369,7 +355,7 @@ nav ul li a:hover::after {
 .team-member p {
     font-size: 16px;
     color: #666;
-    margin-bottom: 20px; /* Add spacing below the paragraph */
+    margin-bottom: 20px; 
 }
 
 .team-member ul.social-icon {
@@ -394,6 +380,8 @@ nav ul li a:hover::after {
 .team-member ul.social-icon a:hover {
     color: #93ca3a;
 }
+
+
 /* Newsletter Section */
 #newsletter .newsletter-banner {
     position: relative;
@@ -430,10 +418,10 @@ nav ul li a:hover::after {
 }
 #newsletter .newsletter-form input[type="email"] {
     width: 330px;
-    border: 1px solid #fff; /* White border */
-    background-color: transparent; /* Transparent background */
+    border: 1px solid #fff; 
+    background-color: transparent; 
     color: #fff; /* White text */
-    padding: 17px; /* Increase padding */
+    padding: 17px; 
     font-size: 18px;
 }
 #newsletter .newsletter-box input[type="email"]::placeholder {
@@ -441,15 +429,15 @@ nav ul li a:hover::after {
 }
 #newsletter .newsletter-form button {
     margin-left: 10px;
-    padding: 15px 30px; /* Increase button size */
-    background-color: #93ca3a; /* Green color */
+    padding: 15px 30px; 
+    background-color: #93ca3a; 
     border: none;
     color: #fff;
     font-size: 18px;
 }
 
 
-/* CSS for the Pricing Section */
+/* Pricing Section */
 #pricing {
     padding: 50px 0;
     text-align: center;
@@ -467,14 +455,14 @@ nav ul li a:hover::after {
     background-color: transparent;
     padding: 20px;
     text-align: center;
-    width: 270px; /* Adjust the width of the boxes */
-    height: 450px; /* Adjust the height of the boxes */
-    display: inline-block; /* Display the boxes inline */
-    margin-right: -4px; /* Adjust negative margin to remove space between boxes */
+    width: 270px; 
+    height: 450px; 
+    display: inline-block; 
+    margin-right: -4px; 
 }
 
 .pricing-box:last-child {
-    margin-right: 0; /* Remove negative margin for the last box */
+    margin-right: 0; 
 }
 
 .pricing-box h3 {
@@ -488,7 +476,7 @@ nav ul li a:hover::after {
 }
 
 .pricing-box ul li {
-    margin-bottom: 45px; /* Add space between each line */
+    margin-bottom: 45px; 
 }
 
 .pricing-box .btn {
@@ -500,12 +488,12 @@ nav ul li a:hover::after {
     text-decoration: none;
 }
 
-/* Remove the line below the "Sign Up" text */
+
 .pricing-box .btn:after {
     display: none;
 }
 
-/* Custom styling for each box */
+
 .basic-title,
 .standard-title,
 .professional-title,
@@ -563,10 +551,10 @@ nav ul li a:hover::after {
     margin-bottom: 20px;
 }
 .portfolio-images img {
-    transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
+    transition: transform 0.3s ease-in-out; 
 }
 .portfolio-images img:hover {
-    transform: scale(1.1); /* Increase the size by 10% */
+    transform: scale(1.1); 
 }
 
 
@@ -601,9 +589,9 @@ nav ul li a:hover::after {
 .contact-form {
     width: 45%;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);; /* Slightly more opaque background */
-    border-radius: 10px; /* Add border-radius for rounded corners */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+    background-color: rgba(255, 255, 255, 0.9);; 
+    border-radius: 10px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
 }
 
 .contact-info {
@@ -615,7 +603,7 @@ nav ul li a:hover::after {
 }
 
 .contact-form .form-control {
-    width: calc(100% - 20px); /* Adjust for padding */
+    width: calc(100% - 20px); 
 }
 
 .solution-co,
@@ -627,7 +615,7 @@ nav ul li a:hover::after {
 .social-icons {
     list-style: none;
     padding: 0;
-    margin-top: 20px; /* Add spacing above social icons */
+    margin-top: 20px; 
 }
 
 .social-icons li {
@@ -638,11 +626,11 @@ nav ul li a:hover::after {
 .social-icons a {
     color: #93ca3a;
     font-size: 24px;
-    transition: color 0.3s ease; /* Add transition for smoother hover effect */
+    transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: #5fa130; /* Darken color on hover */
+    color: #5fa130; 
 }
 
 .form-group {
@@ -663,11 +651,11 @@ nav ul li a:hover::after {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Add transition for smoother hover effect */
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #5fa130; /* Darken background color on hover */
+    background-color: #5fa130; 
 }
 
 footer {
