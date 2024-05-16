@@ -1,0 +1,695 @@
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #fff;
+            color: #333;
+            padding: 15px 130px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 20px;
+            margin-right: auto;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 40px; /* Increased margin between links */
+            position: relative;
+        }
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+        nav ul li a {
+            color: #666;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: bold;
+            position: relative;
+        }
+        nav ul li a:hover {
+            color: #4CAF50; /* Apple green */
+        }
+        nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust the distance of the line from the text */
+    width: 100%;
+    height: 2px;
+    background-color: transparent; /* Initial color of the line */
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover::after {
+    background-color: #4CAF50; /* Apple green */
+}
+        section {
+            padding: 0px;
+        }
+        
+
+
+        .slider-container {
+    width: 100%;
+    height: 800px; /* Adjust height as needed */
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    width: 200%; /* Double the width to accommodate two slides */
+    height: 100%;
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.slide {
+    width: 50%; /* Each slide takes half of the slider's width */
+    height: 100%;
+    position: relative; /* Necessary for correct positioning */
+    
+}
+
+.slide img {
+            width: 100%; /* Adjust width to show more content */
+            height: 100%;
+            object-fit: cover;
+            /* object-position: center; Adjust position to center the content */
+        }
+
+.slide-text {
+    position: absolute;
+            top: 290px; 
+            left: 565px; 
+            color: white;
+            display: flex;
+    flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            
+}
+
+.slide-text h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.slide-text p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+
+
+
+.hero-text {
+            font-size: 40px;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+        .hero-text p:last-child {
+            margin-top: 10px;
+            font-weight: bold; /* Make the last paragraph bold */
+        }
+        .button {
+            background-color: #5ee263; /* Apple green */
+            color: white;
+            padding: 20px 115px;
+            border: none;
+            border-radius: 0px;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049; /* Darker shade of green on hover */
+        }
+
+
+        #service {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1430px;
+    margin: 0 auto;
+    padding: 15 40px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+.column {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.column img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.column h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.column p {
+    font-size: 16px;
+    color: #666;
+}
+.column .icon {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* start divider */
+#divider
+    {
+        background: url('images/divider-bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #FFFFFF;
+        height: 610px;
+    }
+#divider h2
+    {
+        font-size: 60px;
+        margin-top: 170px;
+        margin-bottom: 20px;
+    }
+#divider strong
+    {
+        color: #93ca3a;
+    }
+#divider h3
+    {
+        padding-bottom: 30px;
+        font-size: 30px;
+    }
+#divider p{
+    font-size: 16px;
+}
+#divider mark{
+    background-color: #fcf8e3;
+}
+/* end divider */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px; /* Adjust margin for all sides */
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.about-content {
+    width: 60%;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.about-content h2 {
+    color: #93ca3a;
+    font-size: 35px;
+    margin-top: 0;
+}
+
+.about-content p strong {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.progress-bars {
+    width: 35%;
+}
+
+.progress-bar-item {
+    margin-bottom: 20px;
+}
+
+.progress-bar-text {
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.progress {
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px; /* Add border-radius for rounded edges */
+    overflow: hidden; /* Hide overflow to keep the inner bars within the container */
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #93ca3a;
+    color: #fff;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 5px;
+    line-height: 20px;
+    border-radius: 10px; /* Add border-radius for rounded edges */
+}
+
+.progress-bar-inner {
+    height: 100%;
+    background-color: #93ca3a;
+    border-radius: 10px; /* Add border-radius for rounded edges */
+    transition: width 0.5s ease;
+}
+
+/* .progress-bar-web-design .progress-bar-inner {
+    width: 100%; 
+}
+
+.progress-bar-multimedia .progress-bar-inner {
+    width: 80%;
+}
+
+.progress-bar-search-engine .progress-bar-inner {
+    width: 90%;
+}
+
+.progress-bar-custom-branding .progress-bar-inner {
+    width: 70%;
+} */
+
+/* Adjust width for each progress bar */
+.progress-bar-web-design .progress-bar-inner {
+    width: 0%; /* Initially set width to 0 */
+}
+
+.progress-bar-multimedia .progress-bar-inner {
+    width: 0%; /* Initially set width to 0 */
+}
+
+.progress-bar-search-engine .progress-bar-inner {
+    width: 0%; /* Initially set width to 0 */
+}
+
+.progress-bar-custom-branding .progress-bar-inner {
+    width: 0%; /* Initially set width to 0 */
+}
+
+/* Add a class to apply animation when about section is clicked */
+.about-section.active .progress-bar-inner {
+    width: 100%; /* Set width to 100% when active */
+}
+
+
+
+
+/* Team Section */
+#team {
+    border-top: 1px solid #f6f6f6;
+    border-bottom: 1px solid #f6f6f6;
+    padding: 50px 0;
+}
+
+#team h2 {
+    padding-bottom: 40px;
+    padding-left: 625px;
+    padding-right: 50px;
+}
+
+.team-member {
+    text-align: center; /* Center the content */
+    margin-bottom: 60px; /* Add space between each team member */
+}
+
+.team-member .team-image {
+    width: 300px; /* Adjust the width of the images */
+    margin: 0 auto 20px; /* Center the images horizontally and add spacing below */
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member .team-image:hover {
+    transform: scale(1.1); /* Increase the size by 10% */
+}
+
+.team-member h3 {
+    color: #93ca3a;
+    padding-bottom: 0px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.team-member h4 {
+    font-size: 16px;
+    padding-top: 2px;
+    margin-bottom: 2px;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px; /* Add spacing below the paragraph */
+}
+
+.team-member ul.social-icon {
+    padding-top: 20px;
+}
+
+.team-member ul.social-icon li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.team-member ul.social-icon li:last-child {
+    margin-right: 0;
+}
+
+.team-member ul.social-icon a {
+    color: #666;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.team-member ul.social-icon a:hover {
+    color: #93ca3a;
+}
+/* Newsletter Section */
+#newsletter .newsletter-banner {
+    position: relative;
+    text-align: center;
+}
+#newsletter .newsletter-banner img {
+    width: 100%;
+    height: 40%;
+}
+#newsletter .newsletter-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+#newsletter .newsletter-text {
+    margin-bottom: 20px;
+}
+#newsletter .newsletter-text h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+#newsletter .newsletter-text p {
+    font-size: 18px;
+}
+#newsletter .newsletter-form {
+    margin-top: 20px;
+}
+#newsletter .newsletter-form .form-group {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+#newsletter .newsletter-form input[type="email"] {
+    width: 330px;
+    border: 1px solid #fff; /* White border */
+    background-color: transparent; /* Transparent background */
+    color: #fff; /* White text */
+    padding: 17px; /* Increase padding */
+    font-size: 18px;
+}
+#newsletter .newsletter-box input[type="email"]::placeholder {
+    color: white;
+}
+#newsletter .newsletter-form button {
+    margin-left: 10px;
+    padding: 15px 30px; /* Increase button size */
+    background-color: #93ca3a; /* Green color */
+    border: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+/* CSS for the Pricing Section */
+#pricing {
+    padding: 50px 0;
+    text-align: center;
+}
+
+
+#pricing h2 {
+    padding-bottom: 40px;
+    padding-left: 625px;
+    padding-right: 50px;
+}
+
+.pricing-box {
+    border: 1px solid #ccc;
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+    width: 270px; /* Adjust the width of the boxes */
+    height: 450px; /* Adjust the height of the boxes */
+    display: inline-block; /* Display the boxes inline */
+    margin-right: -4px; /* Adjust negative margin to remove space between boxes */
+}
+
+.pricing-box:last-child {
+    margin-right: 0; /* Remove negative margin for the last box */
+}
+
+.pricing-box h3 {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.pricing-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pricing-box ul li {
+    margin-bottom: 45px; /* Add space between each line */
+}
+
+.pricing-box .btn {
+    background-color: #93ca3a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Remove the line below the "Sign Up" text */
+.pricing-box .btn:after {
+    display: none;
+}
+
+/* Custom styling for each box */
+.basic-title,
+.standard-title,
+.professional-title,
+.advanced-title {
+    font-size: 28px;
+    color: #93ca3a;
+}
+
+.basic-line,
+.standard-line,
+.professional-line,
+.advanced-line {
+    display: none;
+}
+
+
+
+
+/* Recent Projects Section */
+#recent-projects {
+    padding: 50px 0;
+}
+
+#recent-projects h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    padding-left: 625px;
+}
+
+.portfolio-categories {
+    margin-bottom: 20px;
+    text-align: center;
+    padding-left: 530px;
+    margin-bottom: 40px;
+}
+
+.portfolio-categories .btn {
+    margin-right: 4px;
+    border: 1px solid #ccc;
+    background-color: black;
+}
+
+.portfolio-images .row {
+    margin-top: 30px;
+}
+
+.portfolio-images .col-md-4 {
+    margin-bottom: 30px;
+}
+
+.portfolio-images img {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+.portfolio-images img {
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+.portfolio-images img:hover {
+    transform: scale(1.1); /* Increase the size by 10% */
+}
+
+
+
+
+/* Contact Section */
+#contact {
+    position: relative;
+    padding: 50px 0;
+}
+
+.contact-image {
+    width: 100%;
+    min-height: 390px;
+    background-image: url('images/contact-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+}
+
+.contact-info,
+.contact-form {
+    width: 45%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);; /* Slightly more opaque background */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+.contact-info {
+    margin-right: 20px;
+}
+
+.contact-form {
+    margin-left: 20px;
+}
+
+.contact-form .form-control {
+    width: calc(100% - 20px); /* Adjust for padding */
+}
+
+.solution-co,
+.visit-office {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px; /* Add spacing above social icons */
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons a {
+    color: #93ca3a;
+    font-size: 24px;
+    transition: color 0.3s ease; /* Add transition for smoother hover effect */
+}
+
+.social-icons a:hover {
+    color: #5fa130; /* Darken color on hover */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #93ca3a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition for smoother hover effect */
+}
+
+.btn:hover {
+    background-color: #5fa130; /* Darken background color on hover */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
